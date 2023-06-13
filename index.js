@@ -1,7 +1,8 @@
 function onSubmit(){
-    const text = document.getElementById('answer').value;
+    const email = document.getElementById('email').value;
+    const orderNumber = document.getElementById('orderNumber').value;
 
-    const msg = "【送信内容】\n" + text;
+    const msg = "メールアドレス: " + email + "\n注文番号: " + orderNumber;
     console.log(msg);
     sendText(msg);
 
